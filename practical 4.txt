@@ -109,3 +109,44 @@ int main()
 
     return 0;
 }
+
+
+Title ::::
+Implementation of Stack Using Singly Linked List and Conversion of Infix Expression to Postfix Expression.
+
+Theory:::::
+A circular queue is a linear data structure that follows the FIFO (First In, First Out) principle. It connects the last position of the array back to the first position, forming a circle.
+It efficiently utilizes memory by reusing empty spaces created after deletion.
+Main operations:
+Enqueue: Inserts an element into the queue.
+Dequeue: Removes an element from the queue.
+Display: Displays all elements of the queue.
+
+Algorithm:::::::
+
+Enqueue (Insertion):
+Start.
+Check whether the queue is full.
+If full, display overflow.
+Otherwise, update the rear position using circular increment.
+Insert the new element.
+Stop.
+
+Dequeue (Deletion):
+Start.
+Check whether the queue is empty.
+If empty, display underflow.
+Otherwise, remove the front element.
+Update the front position.
+Stop.
+
+Display:
+Check whether the queue is empty.
+If empty, display a message.
+Otherwise, traverse from front to rear using circular increment.
+Display all elements.
+Stop.
+
+Conclusion:::::
+
+Thus, a circular queue was successfully implemented using an array, and insertion, deletion, and display operations were performed.
