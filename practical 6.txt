@@ -57,3 +57,40 @@ print("Total distance =", total, "m")
 
 if len(mst) < n - 1:
     print("Graph is not fully connected.")
+
+
+
+Title::::
+
+ Graph Representation Using Adjacency List and Adjacency Matrix and Finding Minimum Spanning Tree Using Kruskal's Algorithm.
+
+Theory::::::
+
+A graph is a non-linear data structure consisting of vertices (nodes) and edges (connections).
+In a college campus graph:
+Vertices represent different departments or institutes.
+Edges represent connections between departments.
+Weights represent the distance between departments.
+A graph can be represented using:
+Adjacency List: Stores the connected vertices of each vertex.
+Adjacency Matrix: Uses a two-dimensional matrix to represent connections.
+A Minimum Spanning Tree (MST) is a tree that connects all vertices with minimum total edge weight without forming a cycle.
+Kruskal's algorithm is a greedy algorithm that selects edges in increasing order of weight.
+
+Algorithm (Kruskal's Algorithm)::::
+
+Start.
+Create a graph with vertices and weighted edges.
+Sort all edges in increasing order of weight.
+Initialize an empty Minimum Spanning Tree.
+Select the edge with the minimum weight.
+Check whether adding the edge creates a cycle.
+If no cycle is formed, add the edge to the MST.
+Repeat until the MST contains V-1 edges.
+Calculate the total weight of the MST.
+Display the selected edges and total cost.
+Stop.
+
+Conclusion::::
+
+Thus, the graph was successfully represented using adjacency list/adjacency matrix, and the Minimum Spanning Tree was obtained using Kruskal's algorithm with minimum total cost.
