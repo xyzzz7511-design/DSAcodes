@@ -145,6 +145,64 @@ int main()
     cout << "Enter Infix Expression: ";
     cin >> infix;
 
+
+
+DSAL – Experiment No. 3
+Title : 
+Design a C++ program to implement Stack as an Abstract Data Type (ADT) using Singly Linked List and use this ADT for conversion of Infix Expression to Postfix.
+Theory: 
+1. Stack
+A Stack is a linear data structure that follows the LIFO (Last In, First Out) principle. The element inserted last is removed first.
+2. Abstract Data Type (ADT)
+An Abstract Data Type (ADT) is a logical description of a data structure that defines its operations without specifying their implementation details.
+3. Singly Linked List
+A Singly Linked List is a linear data structure in which each node contains two parts:
+Data: Stores the element.
+Next: Stores the address of the next node.
+The stack is implemented using a linked list with a pointer called top.
+Push: Inserts an element at the top of the stack.
+Pop: Removes the top element from the stack.
+Peek: Displays the top element without removing it.
+Display: Displays all elements of the stack.
+5. Infix Expression
+An expression in which operators are written between operands is called an Infix Expression.
+Example: A + B
+6. Postfix Expression
+An expression in which operators are written after operands is called a Postfix Expression.
+Example: AB+
+Operator Precedence:
+Operator Precedence
+^ Highest
+*, /, % Medium
++, - Lowest
+Algorithm.............
+Start.
+Create an empty stack using a singly linked list.
+Read the infix expression from left to right.
+If the character is an operand, add it to the postfix expression.
+If it is an opening bracket, push it onto the stack.
+If it is a closing bracket, pop operators until the opening bracket is found.
+If it is an operator, pop operators having higher or equal precedence and then push the current operator.
+Repeat until the expression ends.
+Pop all remaining operators from the stack.
+Display the postfix expression.
+Stop.
+
+Example : 
+Consider the following Infix Expression:
+Infix Expression
+A + B * C
+Conversion using Stack:
+Step Symbol Stack Postfix
+1 A Empty A
+2 + + A
+3 B + AB
+4 * +, * AB
+5 C +, * ABC
+6 End Empty ABC*+
+
+Conclusion : 
+Thus, the stack was successfully implemented using a singly linked list, and infix expressions were converted into postfix expressions using stack operations.
     cout << "Postfix Expression: "
          << infixToPostfix(infix) << endl;
 
