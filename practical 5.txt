@@ -120,3 +120,50 @@ while True:
 
     else:
         print("Invalid choice. Try again.")
+
+
+Title::::::
+
+Implementation of Binary Search Tree (BST) Using Python.
+
+Theory::::::
+
+Binary Search Tree (BST) is a non-linear data structure in which each node contains a value and has at most two children.
+The left child contains values smaller than the parent node, and the right child contains values greater than the parent node.
+Main operations:
+Insert: Adds a new node.
+Delete: Removes an existing node.
+Search: Finds a particular element.
+Traversal: Displays the tree elements.
+Duplicate entries can be handled by ignoring duplicate values during insertion.
+
+Algorithm:::::
+
+Start
+Create a new node .
+If the tree is empty, make it the root.
+If the value is smaller, insert it into the left subtree.
+If the value is greater, insert it into the right subtree.
+Ignore duplicate values.
+Stop.
+Deletion:
+Search for the node to be deleted.
+If the node is a leaf, remove it.
+If it has one child, replace it with its child.
+If it has two children, replace it with its inorder successor.
+Update the tree.
+Searching:
+Start from the root.
+Compare the key with the current node.
+If equal, the element is found.
+If smaller, move left.
+If greater, move right.
+Repeat until found or the node becomes NULL.
+Traversal:
+Inorder: Left, Root, Right.
+Preorder: Root, Left, Right.
+Postorder: Left, Right, Root.
+
+Conclusion:::::
+
+Thus, a Binary Search Tree was successfully implemented using Python, and insertion, deletion, searching, and traversal operations were performed.
