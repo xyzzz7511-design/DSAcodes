@@ -155,3 +155,71 @@ int main()
     return 0;
 }
 ha code copy paste kr
+
+
+
+
+
+1. Title
+Design a C++ program to maintain a Student Database that performs the following operations: (1) Add and
+store student details (ID, Name, CGPA) using dynamically allocated memory. (2) Expand the student list
+using realloc() as new entries are added. (3) Implement Linear Search and Binary Search to find student
+records by ID.
+2. Theory
+Student Database: A Student Database is used to store and manage student information such as Student
+ID, Name and CGPA.
+Dynamic Memory Allocation: Dynamic Memory Allocation is a technique used to allocate memory during
+program execution as required.
+realloc(): The realloc() function is used to increase or decrease the size of previously allocated memory
+when new student records are added.
+Linear Search: Linear Search is a searching technique that checks each element one by one until the
+required element is found or the list ends. Time Complexity: O(n).
+Binary Search: Binary Search is an efficient searching technique that works on a sorted list. It repeatedly
+divides the list into two halves to find the required element. Time Complexity: O(log n).
+3. Algorithms
+Algorithm 1: Linear Search
+1. Start.
+2. Accept the Student ID to be searched.
+3. Initialize the index to 0.
+4. Compare the search ID with each student's ID.
+5. If the ID matches, display the student details.
+6. Otherwise, move to the next record.
+7. If the ID is not found after checking all records, display “Student Not Found”.
+8. Stop.
+Algorithm 2: Binary Search
+1. Start.
+2. Sort student records in ascending order of Student ID.
+3. Accept the Student ID to be searched.
+4. Initialize low = 0 and high = n - 1.
+5. Calculate the middle position using mid = (low + high) / 2.
+6. Compare the middle student's ID with the search ID.
+7. If both IDs are equal, display the student details.
+8. If the search ID is smaller, set high = mid - 1.
+9. If the search ID is greater, set low = mid + 1.
+10. Repeat until the ID is found or low > high. Page 2
+11. If the ID is not found, display “Student Not Found”.
+12. Stop.
+4. Example
+Consider the following Student Database:
+Student ID Name CGPA
+101 Amit 8.5
+102 Rahul 9.0
+103 Sneha 8.2
+104 Priya 9.2
+105 Rohit 8.7
+A. Linear Search
+Search ID = 103
+Step Student ID Result
+1 101 Not Found
+2 102 Not Found
+3 103 Found
+Output: Student Found: Sneha, CGPA: 8.2
+B. Binary Search
+Search ID = 104
+Step Low High Mid ID at Mid
+1 0 4 2 103
+2 3 4 3 104
+Output: Student Found: Priya, CGPA: 9.2
+5. Conclusion
+Thus, we successfully implemented a Student Database in C++ using Dynamic Memory Allocation and
+realloc(). We also implemented Linear Search and Binary Search to search student records using Student ID.
