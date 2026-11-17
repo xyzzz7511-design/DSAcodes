@@ -163,3 +163,44 @@ int main()
 
     return 0;
 }
+
+
+
+Title:::::::
+Design a C++ program to maintain a student database that performs the following tasks: 
+1. Add and store student details (ID, Name, CGPA) using dynamically allocated memory. 
+2. Expand the student list using realloc() as new entries are added.  
+3. Implement at least two Sorting Algorithms (Bubble Sort, Selection Sort, or Insertion Sort) to sort student records by: 
+o Name (Alphabetically) 
+o CGPA (Ascending/Descending)
+
+Theory::::::
+
+A student database is used to store and manage student information such as Student ID, Name, and CGPA.
+In this experiment, dynamic memory allocation is used to store student records. Memory is allocated at runtime using malloc() or calloc() and expanded using realloc() when new student records are added.
+Sorting algorithms are used to arrange student records in a particular order.
+
+Algorithm::::
+
+Step 1: Create Student Database
+Start.
+Define a structure containing Student ID, Name, and CGPA.
+Allocate memory dynamically for student records.
+Accept the number of students.
+Enter student details.
+Step 2: Expand Memory
+Accept new student records.
+Use realloc() to increase the memory size.
+Add the new student details.
+Repeat whenever new records are added.
+Step 3: Sorting
+Display the student records.
+Select a sorting algorithm (Bubble Sort, Selection Sort, or Insertion Sort).
+Choose the sorting field (Name or CGPA).
+Compare student records.
+Swap records according to the selected sorting order.
+Display the sorted student records.
+Step 4: Stop.
+
+Conclusion ::::
+Thus, a student database was successfully implemented in C++ using dynamic memory allocation. The memory was expanded using realloc() as new records were added. Different sorting algorithms were used to arrange student records alphabetically by name and in ascending or descending order of CGPA
