@@ -35,3 +35,35 @@ print("Original array:", numbers)
 heap_sort(numbers)
 
 print("Sorted array:", numbers)
+
+
+
+Title::::
+
+Implementation of Heap Sort Using Python.
+
+Theory:::::
+
+Theory
+Heap Sort is a comparison-based sorting algorithm that uses a binary heap data structure.
+A heap is a complete binary tree that satisfies the heap property.
+There are two types of heaps:
+Max Heap: Parent node is greater than or equal to its children.
+Min Heap: Parent node is smaller than or equal to its children.
+For sorting elements in ascending order, Heap Sort generally uses a Max Heap.
+The largest element is repeatedly moved to the end of the array until all elements are sorted.
+
+Algorithm::::::::
+
+Start.
+Read the array elements.
+Build a Max Heap from the given array.
+Swap the root element with the last element.
+Reduce the heap size by one.
+Apply heapify to maintain the Max Heap property.
+Repeat until the heap size becomes one.
+Display the sorted array in ascending order.
+Stop.
+
+Conclusion :::::
+Thus, the Heap Sort algorithm was successfully implemented using Python. The given array was sorted in ascending order using a Max Heap with O(n log n) time complexity.
