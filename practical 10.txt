@@ -19,3 +19,31 @@ if len(result) > 0:
     print("Pattern found at index:", result)
 else:
     print("Pattern not found")
+
+Title :::::
+
+Implementation of Naive String Matching Algorithm Using Python to Find All Occurrences of a Pattern in a Given Text.
+
+Theory::::
+
+Naive String Matching is a simple pattern-matching algorithm used to find all occurrences of a given pattern in a text string.
+It compares the pattern with every possible substring of the text, character by character. If all characters match, the starting index is stored.
+The algorithm checks all possible positions from index 0 to , where:
+n = Length of text
+m = Length of pattern
+Time Complexity: O(n × m)
+Space Complexity: O(1), excluding the output list.
+
+Algorithm
+Start.
+Read the text string and pattern string.
+Calculate the length of text (n) and pattern (m).
+Iterate through the text from index 0 to n-m.
+Compare the pattern with the substring of the text.
+If all characters match, print the starting index.
+If no match is found, display "Pattern not found".
+Stop.
+
+Conclusion:::::
+
+Thus, the Naive String Matching Algorithm was successfully implemented using Python to find all occurrences of a given pattern in a text string.
